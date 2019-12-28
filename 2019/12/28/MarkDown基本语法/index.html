@@ -17,7 +17,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://yoursite.com/2019/12/28/MarkDown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/MuseDash.png">
 <meta property="article:published_time" content="2019-12-28T15:39:30.000Z">
-<meta property="article:modified_time" content="2019-12-28T16:16:17.632Z">
+<meta property="article:modified_time" content="2019-12-28T17:27:32.360Z">
 <meta property="article:author" content="Yasin Liew">
 <meta property="article:tag" content="markdown">
 <meta property="article:tag" content="语法">
@@ -276,7 +276,7 @@
 </blockquote>
 <h3 id="2-脚注"><a href="#2-脚注" class="headerlink" title="2. 脚注"></a>2. 脚注</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Markup:</span><br><span class="line">内容1[^1]  </span><br><span class="line">内容2[^2]</span><br><span class="line"></span><br><span class="line">[^1]: 第一个脚注</span><br><span class="line">[^2]: 第二个脚注</span><br></pre></td></tr></table></figure>
 
-<p>注意：<br><em>1.[^]里的内容随意但不能重复</em><br><em>2.内容与脚注要注意隔行，脚注内容可以在文档任意位置。</em></p>
+<p>注意：<br><em>1.脚注功能兼容性比较差，目前少用</em><br><em>2.[^]里的内容（ID）随意但不能重复</em><br><em>3.内容与脚注要注意隔行，脚注内容可以在文档任意位置。</em></p>
 <p><strong>效果如下：</strong></p>
 <p>内容1<a href="第一个脚注">^1</a><br>内容2<a href="第二个脚注">^2</a></p>
 <hr>
@@ -314,9 +314,9 @@
 <hr>
 </blockquote>
 <hr>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">|       |第一列  |第二列  |第三列  |</span><br><span class="line">|:-----:|:------|:------:|------:|</span><br><span class="line">|第一行  |  居左1|  居中2|  居右3|</span><br><span class="line">|第二行  |  居左4|  居中5|  居右6|</span><br><span class="line">|第三行  |  居左7|  居中8|  居右9|</span><br></pre></td></tr></table></figure>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Markup:</span><br><span class="line">|       |第一列  |第二列  |第三列  |</span><br><span class="line">|:-----:|:------|:------:|------:|</span><br><span class="line">|第一行  |  居左1|  居中2|  居右3|</span><br><span class="line">|第二行  |  居左4|  居中5|  居右6|</span><br><span class="line">|第三行  |  居左7|  居中8|  居右9|</span><br></pre></td></tr></table></figure>
 
-<p>注意：<br><em>1.</em> | <em>符号不能漏（最后一列可省）</em><br><em>2.居左 “:—-”，居中 “:—-:”，居右 “—-:”</em></p>
+<p>注意：<br><em>1.</em> | <em>符号不能漏（最后一列可省）</em><br><em>2.居左 <code>:----</code>，居中 <code>:----:</code>，居右 <code>----:</code></em></p>
 <p><strong>效果如下：</strong>  </p>
 <table>
 <thead>
