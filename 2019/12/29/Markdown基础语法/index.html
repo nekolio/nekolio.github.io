@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar_c.png">
+  <link rel="icon" type="image/png" href="/img/avatar_c.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="description" content="">
+  <meta name="author" content="nekolio">
+  <meta name="keywords" content="">
+  <title>Markdown基础语法 ~ nekolio 个人主页</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
+
+<link rel="stylesheet" href="/css/main.css"  >
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
+
+
+<meta name="generator" content="Hexo 4.2.0"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>nekolio 个人主页</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">主页</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">归档</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">分类</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">标签</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">关于我</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background"
+         style="background: url('/img/homebackground.jpg')no-repeat center center;
+           background-size: cover;
+           background-attachment: fixed;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  Sunday, December 29th 2019, 2:45 am
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    1.1k 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      4 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <h1>Markdown基础语法</h1>
+<hr>
+<h2 id="字体样式">字体样式</h2>
+<h3 id="1-一级标题">1. 一级标题</h3>
+<pre><code>Markup1:
+
+# 一级标题 #
+
+or Markup2:
+
+一级标题
+==
+
+</code></pre>
+<p>注意：<br>
+<em>1.Markup1中右 “#” 可以省略，同时注意左 “#” 后要至少输入一个空格之后再输入标题</em></p>
+<p><strong>效果如下：</strong></p>
+<blockquote>
+<div align="center">  
+<h1>一级标题</h1>
+</div>
+</blockquote>
+<h3 id="2-二级及多级标题">2. 二级及多级标题</h3>
+<pre><code>Markup1:
+
+## 二级标题 ##
+
+or Markup2:
+
+二级标题
+--
+</code></pre>
+<p>注意：<br>
+<em>1.Markup1中，右 “#” 可以省略，同时注意左 “#” 后要至少输入一个空格之后再输入标题</em><br>
+<em>2.以此类推，</em><code>### 三级标题 ###</code>，<code>#### 四级标题 ####</code>，<code>##### 五级标题 #####</code>，<code>###### 六级标题 ######</code>，<em>最多到六级标题。</em></p>
+<p><strong>效果如下：</strong></p>
+<blockquote>
+<div align="center">  
+<h2 id="二级标题">二级标题</h2>
+<h3 id="三级标题">三级标题</h3>
+<h4 id="四级标题">四级标题</h4>
+<h5 id="五级标题">五级标题</h5>
+<h6 id="六级标题">六级标题</h6>
+</div>
+</blockquote>
+<h3 id="3-斜体">3. 斜体</h3>
+<pre><code>Markup1:
+
+*斜体*
+
+or Markup2:
+
+_斜体_
+
+</code></pre>
+<p>注意：<br>
+<em>1.星号或下划线中间不用输入空格隔开</em></p>
+<p><strong>效果如下：</strong></p>
+<blockquote>
+<div align="center">  
+<p><em>斜体</em></p>
+</div>  
+</blockquote>
+<h3 id="4-粗体">4. 粗体</h3>
+<pre><code>Markup1:
+
+**粗体**
+
+or Markup2:
+
+__粗体__
+
+</code></pre>
+<p>注意：<br>
+<em>1.星号或下划线中间不用输入空格隔开</em></p>
+<p><strong>效果如下：</strong></p>
+<blockquote>
+<div align="center">  
+<p><strong>粗体</strong></p>
+</div>
+</blockquote>
+<h3 id="5-粗斜体">5. 粗斜体</h3>
+<pre><code>Markup1:
+
+***粗斜体***
+
+or Markup2:
+
+___粗斜体___
+
+</code></pre>
+<p>注意：<br>
+<em>1.星号或下划线中间不用输入空格隔开</em></p>
+<p><strong>效果如下：</strong></p>
+<blockquote>
+<div align="center">  
+<p><em><strong>粗斜体</strong></em></p>
+</div>
+</blockquote>
+<h3 id="6-删除线">6. 删除线</h3>
+<pre><code>Markup:
+
+~~删除线~~
+
+</code></pre>
+<p><strong>效果如下：</strong></p>
+<blockquote>
+<div align="center">  
+<p><s>删除线</s></p>
+</div>
+</blockquote>
+<h3 id="7-正文书写">7. 正文书写</h3>
+<p><code>Markup:直接输入正文内容</code></p>
+<h3 id="8-缩进">8. 缩进</h3>
+<pre><code>Markup:
+&amp;nbsp;缩进1/4个
+&amp;ensp;缩进半个   
+&amp;emsp;缩进一个
+</code></pre>
+<p><strong>效果如下：</strong></p>
+<blockquote>
+<p> 缩进1/4个中文字符的长度<br>
+第二行<br>
+ 缩进半个中文字符的长度<br>
+第二行<br>
+ 缩进一个中文字符的长度<br>
+第二行</p>
+</blockquote>
+<hr>
+<h2 id="列表">列表</h2>
+<h3 id="1-无序列表及其多级列表">1. 无序列表及其多级列表</h3>
+<pre><code>Markup1:
++ 无序列表第一级
+  + 无序列表第二级
+    + 无序列表第三级
+      + 无序列表第四级
+
+or Markup2:
+- 无序列表第一级
+  - 无序列表第二级
+    - 无序列表第三级
+      - 无序列表第四级
+
+or Markup3:
+* 无序列表第一级
+  * 无序列表第二级
+    * 无序列表第三级
+      * 无序列表第四级
+</code></pre>
+<p>注意：<br>
+<em>1.星号或加号或减号中间要输入空格隔开，这点容易与字体样式混淆</em></p>
+<p><strong>效果如下：</strong></p>
+<blockquote>
+<ul>
+<li>无序列表第一级</li>
+<li>无序列表第二级
+<ul>
+<li>无序列表第三级
+<ul>
+<li>无序列表第四级</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="2-有序列表">2. 有序列表</h3>
+<pre><code>Markup:
+1. 有序列表第一项  
+2. 有序列表第二项  
+3. 有序列表第三项
+
+</code></pre>
+<p>注意：<br>
+<em>1.数字 + . + 空格 +内容</em></p>
+<p><strong>效果如下：</strong></p>
+<blockquote>
+<ol>
+<li>有序列表第一项</li>
+<li>有序列表第二项</li>
+<li>有序列表第三项</li>
+</ol>
+</blockquote>
+<hr>
+<h2 id="引用与脚注">引用与脚注</h2>
+<h3 id="1-引用与多级引用">1. 引用与多级引用</h3>
+<pre><code>Markup:
+&gt;引用
+&gt;&gt;二级引用
+&gt;&gt;&gt;多级引用
+
+</code></pre>
+<p><strong>效果如下：</strong></p>
+<blockquote>
+<p>引用</p>
+<blockquote>
+<p>二级引用</p>
+<blockquote>
+<p>多级引用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h3 id="2-脚注">2. 脚注</h3>
+<pre><code>Markup:
+内容1[^1]  
+内容2[^2]
+
+[^1]: 第一个脚注
+[^2]: 第二个脚注
+
+</code></pre>
+<p>注意：<br>
+<em>1.脚注功能兼容性比较差，目前少用</em><br>
+<em>2.[^]里的内容（ID）随意但不能重复</em><br>
+<em>3.内容与脚注要注意隔行，脚注内容可以在文档任意位置。</em></p>
+<p><strong>效果如下：</strong></p>
+<blockquote>
+<p>内容1<a href="%E7%AC%AC%E4%B8%80%E4%B8%AA%E8%84%9A%E6%B3%A8">^1</a><br>
+内容2<a href="%E7%AC%AC%E4%BA%8C%E4%B8%AA%E8%84%9A%E6%B3%A8">^2</a></p>
+</blockquote>
+<hr>
+<h2 id="链接与图片插入">链接与图片插入</h2>
+<h3 id="1-链接">1. 链接</h3>
+<pre><code>行内式
+Markup:
+[我的博客](https://nekolio.github.io &quot;nekolio的博客&quot;)
+</code></pre>
+<pre><code>参考式
+Markup:
+[我的博客][url1]
+
+[url1]: https://nekolio.github.io &quot;nekolio的博客&quot;
+</code></pre>
+<pre><code>显示式
+Markup:
+&lt;https://nekolio.github.io&gt;
+</code></pre>
+<p>注意：<br>
+<em>1.标识与标识声明要注意隔行，声明链接可以在文档任意位置。</em></p>
+<p><strong>效果如下：</strong></p>
+<blockquote>
+<p>行内式：<br>
+<a href="https://nekolio.github.io" target="_blank" rel="noopener" title="nekolio的博客">nekolio的博客</a></p>
+<p>参考式：<br>
+<a href="https://nekolio.github.io" target="_blank" rel="noopener" title="nekolio的博客">nekolio’s blog</a></p>
+<p>显示式：<br>
+<a href="https://nekolio.github.io" target="_blank" rel="noopener">https://nekolio.github.io</a></p>
+</blockquote>
+<h3 id="2-图片">2. 图片</h3>
+<pre><code>Markup:
+![图像名称](相对路径/绝对路径)
+![MuseDash](Markdown基础语法/MuseDash.png &quot;Muse Dash&quot;)
+</code></pre>
+<p>注意：<br>
+<em>1.链接的参考式在图片中可套用</em></p>
+<p><strong>效果如下：</strong></p>
+<blockquote>
+<p><img src="/2019/12/29/Markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/MuseDash.png" srcset="/img/loading.gif" alt="MuseDash" title="Muse Dash"></p>
+</blockquote>
+<hr>
+<h2 id="代码行与代码块">代码行与代码块</h2>
+<h3 id="1-代码行">1. 代码行</h3>
+<pre><code>Markup:
+`printf(&quot;Hello World!&quot;);`
+</code></pre>
+<p><strong>效果如下：</strong></p>
+<blockquote>
+<p><code>printf(&quot;Hello World!&quot;);</code></p>
+</blockquote>
+<h3 id="2-代码块">2. 代码块</h3>
+<pre><code>Markup:  
+\`\`\`java  
+System.out.println(&quot;Hello World!&quot;);  
+System.out.println(&quot;nekolio&quot;);  
+\`\`\`  
+</code></pre>
+<p>注意：<br>
+<em>1.“java”处可以替换成该代码块所用语言，</em> \ <em>是转义符，要去掉</em></p>
+<p><strong>效果如下：</strong></p>
+<blockquote>
+<pre><code class="language-java">System.out.println(&quot;Hello World!&quot;);
+System.out.println(&quot;nekolio&quot;);
+</code></pre>
+</blockquote>
+<hr>
+<h2 id="分割线">分割线</h2>
+<pre><code>Markup1:  
+___  
+
+Markup2:
+***
+</code></pre>
+<p><strong>效果如下：</strong></p>
+<blockquote>
+<hr>
+</blockquote>
+<hr>
+<h2 id="表格">表格</h2>
+<pre><code>Markup:
+|        | 第一列 | 第二列 | 第三列 |
+| :----: | :----- | :----: | -----: |
+| 第一行 | 居左1  | 居中2  |  居右3 |
+| 第二行 | 居左4  | 居中5  |  居右6 |
+| 第三行 | 居左7  | 居中8  |  居右9 |
+
+</code></pre>
+<p>注意：<br>
+<em>1.</em> | <em>符号不能漏（最后一列可省）</em><br>
+<em>2.居左 <code>:-</code>，居中 <code>:-:</code>，居右 <code>-:</code></em></p>
+<p><strong>效果如下：</strong></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:left">第一列</th>
+<th style="text-align:center">第二列</th>
+<th style="text-align:right">第三列</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">第一行</td>
+<td style="text-align:left">居左1</td>
+<td style="text-align:center">居中2</td>
+<td style="text-align:right">居右3</td>
+</tr>
+<tr>
+<td style="text-align:center">第二行</td>
+<td style="text-align:left">居左4</td>
+<td style="text-align:center">居中5</td>
+<td style="text-align:right">居右6</td>
+</tr>
+<tr>
+<td style="text-align:center">第三行</td>
+<td style="text-align:left">居左7</td>
+<td style="text-align:center">居中8</td>
+<td style="text-align:right">居右9</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr>
+<h2 id="未完待续">未完待续</h2>
+<p><a href="#Markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95" title="Goto 标题">返回顶部</a></p>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/Markdown">Markdown</a>
+                
+                  <a class="hover-with-bg" href="/tags/%E8%AF%AD%E6%B3%95">语法</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明<a href="https://nekolio.github.io/" target="_blank" rel="noopener">出处</a>！</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;TOC</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+      <br><br>
+      
+      
+  <div id="vcomments" style="width: 90%; margin: 0 auto;"></div>
+  <script defer src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script defer src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+  <script>
+    var notify = 'false' === true;
+    var verify = 'false' === true;
+    var oldLoad = window.onload;
+    window.onload = function () {
+      new Valine({
+        el: '#vcomments',
+        notify: notify,
+        verify: verify,
+        app_id: "NLekSEN5RGPKLiBSfsLrYDkD-gzGzoHsz",
+        app_key: "sOFyTpxlUYUiqjlvDk0jdkgu",
+        placeholder: "欢迎同志留言",
+        avatar: "wavatar",
+        meta: ['nick', 'mail', 'link'],
+        pageSize: "10",
+      });
+      oldLoad && oldLoad();
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" target="_blank" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://nekolio.github.io" target="_blank" rel="nofollow noopener"><b>nekolio</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv">总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次</span>&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv">总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人</span>&nbsp;
+  
+  <br>
+
+
+
+    
+
+
+    <!-- cnzz Analytics icon -->
+    
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
+
+
+  <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+    <!-- Tencent Analytics -->
+    <script>
+      var _mtac = {};
+      (function () {
+        var mta = document.createElement("script");
+        mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+        mta.setAttribute("name", "MTAH5");
+        mta.setAttribute("sid", "500707649");
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(mta, s);
+      })();
+    </script>
+  
+
+  
+
+  <!-- cnzz Analytics -->
+  
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Markdown基础语法&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 65,
+      loop: true,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+</body>
+</html>

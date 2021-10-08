@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar_c.png">
+  <link rel="icon" type="image/png" href="/img/avatar_c.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="description" content="">
+  <meta name="author" content="nekolio">
+  <meta name="keywords" content="">
+  <title>Windows下Hexo个人静态博客建立（GitHubPages） ~ nekolio 个人主页</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
+
+<link rel="stylesheet" href="/css/main.css"  >
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
+
+
+<meta name="generator" content="Hexo 4.2.0"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>nekolio 个人主页</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">主页</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">归档</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">分类</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">标签</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">关于我</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background"
+         style="background: url('/img/homebackground.jpg')no-repeat center center;
+           background-size: cover;
+           background-attachment: fixed;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  Sunday, December 29th 2019, 6:32 pm
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    894 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      3 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <h1>Windows 下 Hexo 个人静态博客建立（GitHub Pages）</h1>
+<h2 id="特别感谢b站up：codesheep">特别感谢B站up：<a href="https://space.bilibili.com/384068749" target="_blank" rel="noopener">CodeSheep</a></h2>
+<h3 id="注：转载请注明出处">注：<a href="https://nekolio.github.io/" target="_blank" rel="noopener"><strong>转载请注明出处</strong></a></h3>
+<h2 id="1-准备工作">1. 准备工作</h2>
+<h3 id="1-1-node-js">1.1 <a href="https://nodejs.org" target="_blank" rel="noopener">Node.js</a></h3>
+<p><a href="https://nodejs.org" target="_blank" rel="noopener">https://nodejs.org</a><br>
+下载对应版本，默认安装即可</p>
+<h3 id="1-2-git">1.2 <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a></h3>
+<p><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a><br>
+下载对应版本，默认安装即可<br>
+<em>tips：这里主要用到 Git Bush 充当 Linux 下终端的作用以及 push 到 GitHub</em></p>
+<h4 id="可能遇到的问题及解决方法">可能遇到的问题及解决方法</h4>
+<h5 id="1-2-1-如果使用cmd管理员执行-git-命令时遇到-非内外部命令或可执行程序-的错误提示">1.2.1 如果使用cmd管理员执行 git 命令时遇到  <strong>“非内外部命令或可执行程序”</strong>   的错误提示</h5>
+<blockquote>
+<p><em><strong>找到git安装路径中bin的位置和git安装路径中git-core的位置，并将路径复制到系统变量的path中保存并退出，最好重启计算机。</strong></em></p>
+</blockquote>
+<h3 id="1-3-在任意路径下创建一个独立文件夹">1.3 在任意路径下创建一个独立文件夹</h3>
+<h2 id="2-安装-hexo-并在本地部署">2. 安装 Hexo 并在本地部署</h2>
+<h3 id="2-1-在此文件夹下右键选择-git-bush-here">2.1 在此文件夹下右键选择 Git Bush Here</h3>
+<blockquote>
+<dir align="center">  
+<p><img src="/2019/12/29/Windows%E4%B8%8BHexo%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B%EF%BC%88GitHubPages%EF%BC%89/GitBush.png" srcset="/img/loading.gif" alt="Git Bush Here"></p>
+</dir>  
+</blockquote>
+<h4 id="或者打开-git-bush-cd-到该文件夹下">或者打开 Git Bush ，cd 到该文件夹下</h4>
+<blockquote>
+<dir align="center">  
+<p><img src="/2019/12/29/Windows%E4%B8%8BHexo%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B%EF%BC%88GitHubPages%EF%BC%89/cd.png" srcset="/img/loading.gif" alt="Git Bush cd"></p>
+</dir>  
+</blockquote>
+<h3 id="2-2-检查-node-和-npm-的安装">2.2 检查 node 和 npm 的安装</h3>
+<p>分别输入<code>node -v</code>，<code>npm -v</code></p>
+<blockquote>
+<dir align="center">  
+<p><img src="/2019/12/29/Windows%E4%B8%8BHexo%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B%EF%BC%88GitHubPages%EF%BC%89/check.png" srcset="/img/loading.gif" alt="Git Bush check"></p>
+</dir>  
+</blockquote>
+<h3 id="2-3-安装-hexo-并在本地部署">2.3 安装 Hexo 并在本地部署</h3>
+<p><strong>tips:此处安装 cnpm 以改善 Hexo 镜像下载速度（taobao源）</strong></p>
+<ol>
+<li>
+<p>安装 <code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code> ，等待安装完成</p>
+</li>
+<li>
+<p>测试 <code>cnpm</code>，无错误提示即安装成功</p>
+</li>
+<li>
+<p>安装 Hexo <code>cnpm install -g hexo-cli</code>，等待安装完成</p>
+</li>
+<li>
+<p>测试 <code>hexo -v</code>，无错误提示即安装成功</p>
+</li>
+<li>
+<p>检查 终端/cmd 当先工作路径是否在原自建文件夹下<br>
+Git Bush输入：<code>pwd</code><br>
+cmd输入：<code>chdir</code></p>
+</li>
+<li>
+<p>初始化hexo <code>hexo init</code> （这一步前提要安装Git），等待安装完成</p>
+</li>
+</ol>
+<p><strong>到此 Hexo 已基本在本地部署</strong><br>
+7. 本地测试，输入 <code>hexo -s</code> (hexo -start)，得到端口，在浏览器输入端口地址查看效果，在终端 Ctrl + c 可以停止测试</p>
+<h2 id="3-将-hexo-push-到远端部署-github">3. 将 Hexo push 到远端部署（<a href="https://www.github.com" target="_blank" rel="noopener">GitHub</a>）</h2>
+<h3 id="3-1-在-github-上新建-repository">3.1 在 GitHub 上新建 repository</h3>
+<blockquote>
+<p><img src="/2019/12/29/Windows%E4%B8%8BHexo%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B%EF%BC%88GitHubPages%EF%BC%89/GitHub.png" srcset="/img/loading.gif" alt="GitHub"></p>
+</blockquote>
+<p><strong>注意：要记得打开 Pages</strong></p>
+<blockquote>
+<p><img src="/2019/12/29/Windows%E4%B8%8BHexo%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B%EF%BC%88GitHubPages%EF%BC%89/pages.png" srcset="/img/loading.gif" alt="GitHub Pages"></p>
+</blockquote>
+<h3 id="3-2-配置-config-yml">3.2 配置 <code>_config.yml</code></h3>
+<ol>
+<li>
+<p>在自建文件夹下找到 <code>_config.yml</code> ，以文本形式打开</p>
+</li>
+<li>
+<p><strong>找到</strong></p>
+</li>
+</ol>
+<pre><code class="language-html">deploy:
+type: ''  
+</code></pre>
+<p><strong>修改为</strong></p>
+<pre><code class="language-html">deploy:
+type: 'git'
+repo: 仓库地址
+branch: master  
+</code></pre>
+<p><strong>其中，仓库地址为所建仓库地址，例如 <code>https://github.com/nekolio/nekolio.github.io.git</code></strong><br>
+<strong>另外，注意冒号后的空格以及 type 的单引号</strong></p>
+<h3 id="3-3-安装-git-部署插件-完成远端部署">3.3 安装 Git 部署插件，完成远端部署</h3>
+<ol>
+<li>
+<p>回到 终端/cmd ，输入 <code>cnpm install --save hexo-deployer-git</code> 安装 Git 部署工具（这一步前提要安装Git），等待安装完成。</p>
+</li>
+<li>
+<p>三部曲<br>
+<code>hexo clean</code> 清除缓存文件 (db.json) 和已生成的静态文件 (public)。<br>
+<code>hexo g</code> (hexo generate) 生成静态文件。<br>
+<code>hexo d</code> (hexo deploy) 部署网站。<br>
+以上均无错误提示即成功。</p>
+</li>
+</ol>
+<p><strong>到此 Hexo 的远端部署已基本完成</strong><br>
+<strong>访问 Pages 即可，例如 <a href="https://nekolio.github.io" target="_blank" rel="noopener">https://nekolio.github.io</a></strong></p>
+<h2 id="4-补充">4. 补充</h2>
+<h3 id="4-1-hexo-主题设置">4.1 Hexo 主题设置</h3>
+<ol>
+<li>download/clone Hexo 的主题到 themes 文件夹下，例如<br>
+<code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</code> 等待完成。</li>
+<li>配置 <code>_congig.yml</code> ：</li>
+</ol>
+<p>找到<br>
+<code>theme: landscape</code><br>
+改成 <code>theme: yilia</code> 即可</p>
+<ol start="3">
+<li>完成三部曲推送到远端</li>
+</ol>
+<h3 id="4-2-hexo-markdown-里添加图片无法显示问题">4.2 Hexo Markdown 里添加图片无法显示问题</h3>
+<ol>
+<li>配置 <code>_congig.yml</code> ：</li>
+</ol>
+<p>找到 <code>post_asset_folder: false</code><br>
+改成 <code>post_asset_folder: true</code><br>
+<strong>此时 <code>hexo n</code> 命令新建md文件时会自动生成一个同名文件夹，将图片放在此文件夹下后即可在md中引用</strong></p>
+<ol start="2">
+<li>终端输入 <code>npm install hexo-asset-image --save</code><br>
+或<br>
+<code>npm install https://github.com/CodeFalling/hexo-asset-image --save</code><br>
+安装此图片插件</li>
+<li>完成三部曲推送到远端</li>
+</ol>
+<h2 id="5-参考资料">5.参考资料</h2>
+<ol>
+<li>视频：<a href="https://www.bilibili.com/video/av44544186" target="_blank" rel="noopener">手把手教你从0开始搭建自己的个人博客, UP:CodeSheep</a></li>
+<li>文档：<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo 文档</a></li>
+<li>另附：<a href="https://www.codesheep.cn" target="_blank" rel="noopener">CodeSheep博客</a></li>
+</ol>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/Windows">Windows</a>
+                
+                  <a class="hover-with-bg" href="/tags/Hexo">Hexo</a>
+                
+                  <a class="hover-with-bg" href="/tags/GitHub">GitHub</a>
+                
+                  <a class="hover-with-bg" href="/tags/Git">Git</a>
+                
+                  <a class="hover-with-bg" href="/tags/node-js">node.js</a>
+                
+                  <a class="hover-with-bg" href="/tags/npm">npm</a>
+                
+                  <a class="hover-with-bg" href="/tags/CodeSheep">CodeSheep</a>
+                
+                  <a class="hover-with-bg" href="/tags/Blog">Blog</a>
+                
+                  <a class="hover-with-bg" href="/tags/%E5%8D%9A%E5%AE%A2">博客</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明<a href="https://nekolio.github.io/" target="_blank" rel="noopener">出处</a>！</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;TOC</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+      <br><br>
+      
+      
+  <div id="vcomments" style="width: 90%; margin: 0 auto;"></div>
+  <script defer src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script defer src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+  <script>
+    var notify = 'false' === true;
+    var verify = 'false' === true;
+    var oldLoad = window.onload;
+    window.onload = function () {
+      new Valine({
+        el: '#vcomments',
+        notify: notify,
+        verify: verify,
+        app_id: "NLekSEN5RGPKLiBSfsLrYDkD-gzGzoHsz",
+        app_key: "sOFyTpxlUYUiqjlvDk0jdkgu",
+        placeholder: "欢迎同志留言",
+        avatar: "wavatar",
+        meta: ['nick', 'mail', 'link'],
+        pageSize: "10",
+      });
+      oldLoad && oldLoad();
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" target="_blank" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://nekolio.github.io" target="_blank" rel="nofollow noopener"><b>nekolio</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv">总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次</span>&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv">总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人</span>&nbsp;
+  
+  <br>
+
+
+
+    
+
+
+    <!-- cnzz Analytics icon -->
+    
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
+
+
+  <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+    <!-- Tencent Analytics -->
+    <script>
+      var _mtac = {};
+      (function () {
+        var mta = document.createElement("script");
+        mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+        mta.setAttribute("name", "MTAH5");
+        mta.setAttribute("sid", "500707649");
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(mta, s);
+      })();
+    </script>
+  
+
+  
+
+  <!-- cnzz Analytics -->
+  
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Windows下Hexo个人静态博客建立（GitHubPages）&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 65,
+      loop: true,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+</body>
+</html>
