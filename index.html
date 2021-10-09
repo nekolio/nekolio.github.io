@@ -145,6 +145,184 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2021/10/08/RippleCarryAdder/">
+        <p class="h4 index-header">串行进位加法器设计/Ripple-Carry Adder</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">串行进位加法器设计/Ripple-Carry Adder
+串行/行波进位 &amp; 串行/行波进位加法器
+回顾一位 FA （全加器）的设计，不难看到 FA 同时考虑了前一位的进位Ci−1C_{i - 1}Ci−1​和本位计算结果产生的进位CiC_{i}Ci​。
+容易联想到将前一位产生的进位C(out)i−1C_{(out)_{i - 1}}C(out)i−1​​输出到下一个 FA 的C(in)iC_{(in)_{i}}C(in)i​​，串行地联系每位间的进位关系，电路如图1.1图1.1图1.1所示
+
+
+(图1.1)\begin{gathered}
+    (图1.1)
+\end{gathered}(图1.1)​
+第i(i≥1)i(i \ge 1)i(i≥1)位 FA 的C(in)C_{(in)}C(in)​通过从第i−1i - 1i−1个 FA 的CoutC_{out}Cout​获得进位的方式，叫做串行/行波进位，像这样得到加法器叫串行进位加法器，或者叫行波进位加法器(RCA)。串行连接4个 FA 可以组成一个4位加法器，可以进行两个4位二进制数的加法运算。电路如图1.2图1.2图1</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2021-10-08&nbsp;&nbsp;
+        
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86">计算机组成原理</a>&nbsp;
+          
+            <a href="/tags/%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF">数字电路</a>&nbsp;
+          
+            <a href="/tags/CPU">CPU</a>&nbsp;
+          
+            <a href="/tags/%E9%80%BB%E8%BE%91%E9%97%A8%E7%94%B5%E8%B7%AF">逻辑门电路</a>&nbsp;
+          
+            <a href="/tags/%E5%8A%A0%E6%B3%95%E5%99%A8">加法器</a>&nbsp;
+          
+            <a href="/tags/%E5%85%A8%E5%8A%A0%E5%99%A8">全加器</a>&nbsp;
+          
+            <a href="/tags/%E4%B8%B2%E8%A1%8C%E8%BF%9B%E4%BD%8D">串行进位</a>&nbsp;
+          
+            <a href="/tags/%E8%A1%8C%E6%B3%A2%E8%BF%9B%E4%BD%8D">行波进位</a>&nbsp;
+          
+            <a href="/tags/%E4%B8%B2%E8%A1%8C%E8%BF%9B%E4%BD%8D%E5%8A%A0%E6%B3%95%E5%99%A8">串行进位加法器</a>&nbsp;
+          
+            <a href="/tags/Ripple%20Carry%20Adder">Ripple Carry Adder</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2021/10/08/FullAdder/">
+        <p class="h4 index-header">全加器/(1 bit)Full Adder</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">全加器/(1 bit)Full Adder
+1. 全加器定义
+全加器（FA）是能够计算低位进位的二进制逻辑电路元件
+2. 全加器真值表及逻辑表达式
+
+
+
+AiA_{i}Ai​
+BiB_{i}Bi​
+Ci−1C_{i-1}Ci−1​(Carry)
+SiS_{i}Si​(Sum)
+CiC_{i}Ci​
+
+
+
+
+0
+0
+0
+0
+0
+
+
+0
+0
+1
+1
+0
+
+
+0
+1
+0
+1
+0
+
+
+0
+1
+1
+0
+1
+
+
+1
+0
+0
+1
+0
+
+
+1
+0
+1
+0
+1
+
+
+1
+1
+0
+0
+1
+
+
+1
+1
+1
+1
+1
+
+
+
+逻辑表达式：
+Si=Ai⨁Bi⨁Ci−1\begin{aligned}
+    S_{i} = A_{i} \bigoplus B_{i} \bigoplus C_{i-1}
+\end{aligned}Si​=Ai​⨁Bi​⨁Ci−1​​
+Ci=Ai⋅Bi+Ci−1⋅(Ai+Bi)\begin{aligned}
+    C_{i} = A_{i} \cdot B_{i} + C_{i-1} \cdot (A_{i} + B_{i})
+\end{aligned}Ci​=Ai​⋅Bi​+Ci−1​</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2021-10-08&nbsp;&nbsp;
+        
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86">计算机组成原理</a>&nbsp;
+          
+            <a href="/tags/%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF">数字电路</a>&nbsp;
+          
+            <a href="/tags/CPU">CPU</a>&nbsp;
+          
+            <a href="/tags/%E9%80%BB%E8%BE%91%E9%97%A8%E7%94%B5%E8%B7%AF">逻辑门电路</a>&nbsp;
+          
+            <a href="/tags/%E5%8A%A0%E6%B3%95%E5%99%A8">加法器</a>&nbsp;
+          
+            <a href="/tags/%E5%85%A8%E5%8A%A0%E5%99%A8">全加器</a>&nbsp;
+          
+            <a href="/tags/Full%20Adder">Full Adder</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2021/10/08/HalfAdder/">
         <p class="h4 index-header">半加器/(1 bit)Half Adder</p>
         
@@ -226,6 +404,10 @@ C=A×B\begin{aligned}
             <a href="/tags/%E9%80%BB%E8%BE%91%E9%97%A8%E7%94%B5%E8%B7%AF">逻辑门电路</a>&nbsp;
           
             <a href="/tags/%E5%8A%A0%E6%B3%95%E5%99%A8">加法器</a>&nbsp;
+          
+            <a href="/tags/%E5%8D%8A%E5%8A%A0%E5%99%A8">半加器</a>&nbsp;
+          
+            <a href="/tags/Half%20Adder">Half Adder</a>&nbsp;
           
         
       </div>
